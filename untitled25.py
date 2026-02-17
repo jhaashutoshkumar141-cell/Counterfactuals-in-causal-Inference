@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding -*-
 """Untitled25.ipynb
 
 It is also Available on Colab.
