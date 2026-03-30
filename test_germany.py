@@ -151,16 +151,16 @@ for i in range(num_tests):
     x_org = X_test[i].reshape(1,-1)
     y_org = model.predict(x_org)[0]
 
-    # ✅ SAFE CLASS HANDLING
+    #  SAFE CLASS HANDLING
     classes = model.classes_
     y_cf = [c for c in classes if c != y_org][0]
 
     # Opposite class samples
     X_train_cf = X_train[y_train == y_cf]
 
-    # ✅ FIX EMPTY CASE
+    #  FIX EMPTY CASE
     if len(X_train_cf) == 0:
-        print("⚠️ No opposite class found, using full dataset")
+        print(" No opposite class found, using full dataset")
         X_train_cf = X_train
 
     nbrs = NearestNeighbors(n_neighbors=min(10, len(X_train_cf)))
