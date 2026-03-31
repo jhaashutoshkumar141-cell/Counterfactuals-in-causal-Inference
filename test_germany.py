@@ -8,7 +8,7 @@ Original file is located at
 """
 
 # ============================================
-# FINAL PROCE COUNTERFACTUAL PIPELINE (TEST)
+# PROCE COUNTERFACTUAL PIPELINE (TEST)
 # ============================================
 
 import pandas as pd
